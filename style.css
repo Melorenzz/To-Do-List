@@ -1,0 +1,139 @@
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+a{color: white;}
+body{
+    font-family: "Roboto", serif;
+    color: white;
+    background: #000717;
+}
+h1{
+    font-size: 30px;
+    margin: 20px;
+    font-weight: 500;
+}
+.todo_container {
+    width: 500px;
+    height: 600px;
+    background: rgb(47, 53, 61);
+    margin: auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.todo_container input{
+    width: 350px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: inset 1px 1px 10px #aaaaaa;
+
+}
+.todo_elements{
+    
+    margin-top: 35px;
+    overflow-y: scroll;
+    width: 350px;
+    height: 400px;
+}
+
+
+/* Стили для скроллбара */
+.todo_elements::-webkit-scrollbar {
+    width: 6px; /* Тонкий скроллбар */
+}
+
+.todo_elements::-webkit-scrollbar-thumb {
+    background-color: #b0b0b0; /* Светло-серый цвет скроллбара */
+    border-radius: 10px; /* Закругление углов */
+}
+
+.todo_elements::-webkit-scrollbar-thumb:hover {
+    background-color: #888; /* Немного темнее при наведении */
+}
+input[type="text"] {
+    padding: 15px 50px 15px 15px;
+    font-size: 14px;
+}
+
+
+.element{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 55px;
+}
+.element button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgb(255, 48, 121);
+    box-shadow: inset 1px 1px 5px #5c0404;
+    position: relative;
+}
+.element button img{
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.element_task input{
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 20px;
+    max-height: 20px;
+}
+.element_task{
+    box-sizing: border-box;
+    background: rgb(34, 131, 242);
+    box-shadow: inset 1px 1px 5px #035c5c;
+    width: 100%;
+    min-height: 50px;
+    max-width: 290px;
+    border-radius: 30px;
+    padding: 15px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 15px;
+}
+.element_task p{
+    line-height: 22px;
+    max-width: 230px;
+    word-wrap: break-word;
+}
+.input_task{
+    position: relative;
+}
+.input_task button{
+    position: absolute;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background: none;
+}
+.input_task button img {
+    width: 20px;
+}
