@@ -118,6 +118,13 @@ input[type="text"] {
     gap: 10px;
     font-weight: 400;
     font-size: 15px;
+    position: relative;
+}
+.date_create{
+    position: absolute;
+    right: 20px;
+    font-size: 14px;
+    bottom: 0;
 }
 .element_task p{
     line-height: 22px;
